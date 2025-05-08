@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+MimeType=image/*;
+Actions=remImgBg
+
+[Desktop Action remImgBg]
+Name=Remove this image's background (requires rembg and fish)
+Name[pt]=Remover fundo da imagem (requer rembg e fish)
+Icon=games-config-background
+Exec=/home/lorod/.local/bin/remImgBg-default %u

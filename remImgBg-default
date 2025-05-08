@@ -1,0 +1,6 @@
+#!/usr/bin/env fish
+set -l INPUTIMG $argv
+set -l EXTENSION (path extension $INPUTIMG)
+set -l OUTPREP (path change-extension '' $INPUTIMG)
+rembg i $INPUTIMG {$OUTPREP}_BGless{$EXTENSION}
+return
