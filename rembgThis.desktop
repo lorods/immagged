@@ -1,10 +1,18 @@
 [Desktop Entry]
 Type=Service
 MimeType=image/*;
-Actions=remImgBg
+Actions=remImgBg;upscaleImg
+X-KDE-Submenu=Image operations (require fish)
+X-KDE-Submenu[pt]=Operações de imagem (requerem fish)
 
 [Desktop Action remImgBg]
-Name=Remove this image's background (requires rembg and fish)
-Name[pt]=Remover fundo da imagem (requer rembg e fish)
+Name=Remove this image's background (requires rembg)
+Name[pt]=Remover fundo da imagem (requer rembg)
 Icon=games-config-background
-Exec=/home/lorod/.local/bin/remImgBg-default %u
+Exec=~/.local/bin/remImgBg-default %u
+
+[Desktop Action upscaleImg]
+Name=Upscale this image with Upscayl (default is a 4x factor)
+Name[pt]=Aumentar resolução da imagem (upscaling de 4x com Upscayl)
+Icon=transform-scale
+Exec=~/.local/bin/remImgBg-default upscale %u
