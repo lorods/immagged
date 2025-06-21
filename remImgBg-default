@@ -1,4 +1,4 @@
-#!/usr/bin/env fish
+#!/usr/bin/env fish --no-config
 if test $argv[1] != upscale
     set -l INPUTIMG $argv
     set -l EXTENSION (path extension $INPUTIMG)
